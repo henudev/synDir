@@ -6,9 +6,6 @@ import java.util.List;
  * 同步一个文件夹周期内文件.
  */
 public class SyncDir {
-    public static void main (String[] args) {
-
-    }
 
     //遍历文件夹
     public static List<File> getFileList(String fileSrcPath){
