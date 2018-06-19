@@ -2,6 +2,7 @@ package io;
 
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StringTest {
@@ -48,5 +49,21 @@ public class StringTest {
             System.out.println("****\n" + str);
         }
         scanner.close();
+    }
+
+    //scanner from input
+    public static ArrayList scannerFromInput() {
+        ArrayList strArray = new ArrayList();
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNext()){
+            String str = scanner.next();
+            if ("exit".equals(str)) {
+                break;
+            }
+            System.out.println("test::::::::::::" + str);
+            strArray.add(str);
+        }
+        scanner.close();
+        return strArray;
     }
 }
