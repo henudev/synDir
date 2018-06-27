@@ -19,6 +19,48 @@ public class Car {
         System.out.println("brand" + brand + "color" + color + "maxSpeed" + maxSpeed);
     }
 
+	/**
+	 * @return the brand
+	 */
+	public String getBrand() {
+		return brand;
+	}
+
+	/**
+	 * @param brand the brand to set
+	 */
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	/**
+	 * @return the color
+	 */
+	public String getColor() {
+		return color;
+	}
+
+	/**
+	 * @param color the color to set
+	 */
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	/**
+	 * @return the maxSpeed
+	 */
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+
+	/**
+	 * @param maxSpeed the maxSpeed to set
+	 */
+	public void setMaxSpeed(int maxSpeed) {
+		this.maxSpeed = maxSpeed;
+	}
+
 
 
 }

@@ -6,3 +6,8 @@ gen
 /**/build
 /**/classes
 /**/logs
+/target/
+.classpath
+.project
+.settings/
+
