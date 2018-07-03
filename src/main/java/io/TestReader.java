@@ -3,6 +3,8 @@
  */
 package io;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -23,6 +25,7 @@ public class TestReader {
 		String path = "d:\\test.txt";
 		TestReader testReader = new TestReader();
 		testReader.readFileByFileReader(path);
+		testReader.readFileByBufferReader(path);
 
 	}
 	
@@ -38,5 +41,24 @@ public class TestReader {
 		}
 		System.err.println();
 		fileReader.close();
+	}
+	
+	//test bufferReader
+	public void readFileByBufferReader(String path) throws IOException {
+		File file = new File(path);
+		if (file.isFile()) {
+			BufferedReader bufferReader = null;
+			FileReader fileReader = null;
+			fileReader = new FileReader(file);
+			bufferReader = new BufferedReader(fileReader);
+			String line = bufferReader.readLine();
+			System.out.println("byBuffer start::::");
+			while (line != null) {
+				System.out.println(line);
+				line = bufferReader.readLine();
+			}
+			fileReader.close();
+			bufferReader.close();
+		}
 	}
 }
