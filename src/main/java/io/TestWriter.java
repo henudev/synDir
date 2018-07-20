@@ -19,7 +19,6 @@ public class TestWriter {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		String path = "d:\\test.txt";
 		TestWriter testWriter = new TestWriter();
 		testWriter.writeFileByFileWriter(path);
