@@ -1,6 +1,6 @@
 package proxy;
 
-import sun.org.mozilla.javascript.internal.ObjArray;
+// import sun.org.mozilla.javascript.internal.ObjArray;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
