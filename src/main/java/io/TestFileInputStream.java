@@ -9,7 +9,7 @@ public class TestFileInputStream {
     public static void main(String[] args) throws IOException {
         String path = "d:\\test.txt";
         TestFileInputStream testFileInputStream = new TestFileInputStream();
-        testFileInputStream.readFileByFileInputStream(path);
+        TestFileInputStream.readFileByFileInputStream(path);
     }
 
     //test FileInputStream

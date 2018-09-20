@@ -1,9 +1,13 @@
+import collection.MapTest;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 遍历一个路径下文件树.
@@ -70,7 +74,11 @@ public class SyncDir {
     }
     
     public static void main(String[] args) throws IOException{
-        getFileList("D:\\java",depth);
+        //getFileList("D:\\java",depth);
+        
+        //map遍历
+        Map<String, String> map = new HashMap<>();
+        MapTest.workMap(map);
     }
 
 }
