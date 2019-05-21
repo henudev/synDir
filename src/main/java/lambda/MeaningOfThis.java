@@ -35,7 +35,7 @@ public class MeaningOfThis {
         r.run();
         
         //test boolean 
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add("1");
         Runnable b = () -> System.out.println(list.isEmpty());
         b.run();
